@@ -18,6 +18,7 @@ public:
 
     string model;
     int year;
+    int age;
 
     //    Car() {
     //     cout <<"Call default constructor";
@@ -48,7 +49,8 @@ public:
     Car(Car const &obj)
     {
         cout << "Default copy constructor is called" <<endl ;
-
+        this->age = obj.age;
+        this->year = obj.year;
     }
 
     // Destructor
